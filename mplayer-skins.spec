@@ -2,7 +2,7 @@
 %define name		%{base_name}-skins
 %define summary		Skins for %{base_name}
 %define version		1.3
-%define release %mkrel 11
+%define release		%mkrel 12
 %define skin_dir	%{_datadir}/%{base_name}/skins
 
 Name:		%{name}
@@ -16,7 +16,7 @@ Source4:	neutron-1.5.tar.bz2
 Source5:	MidnightLove-1.6.tar.bz2
 Source6:	plastic-1.2.tar.bz2
 Source7:	Orange-1.3.tar.bz2
-Source8:	Blue-small-1.2.tar.bz2
+Source8:	Blue-small-1.4.tar.bz2
 Source9:	xine-lcd-1.2.tar.bz2
 Source10:	phony-1.1.tar.bz2
 Source11:	mentalic-1.2.tar.bz2
@@ -28,13 +28,13 @@ Source16:	AlienMind-1.2.tar.bz2
 Source17:	CornerMP-1.2.tar.bz2
 Source18:	CornerMP-aqua-1.4.tar.bz2
 URL:		http://www.mplayerhq.hu
-License:	GPL
+License:	Freely redistributable without restriction
 Group:		Video
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
-This packages includes following skins:
+This package includes following skins:
 - standard by FRD (Viktor Bekesi), the old default MPlayer skin 
 - Midnight Love, by Gabucino, MPlayer conversion of the nice WinAMP/XMMS skin 
   of Rei Ayanami. 
