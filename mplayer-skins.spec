@@ -31,6 +31,7 @@ URL:		http://www.mplayerhq.hu
 License:	Freely redistributable without restriction
 Group:		Video
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 This package includes following skins:
