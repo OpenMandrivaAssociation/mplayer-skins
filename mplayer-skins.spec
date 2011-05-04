@@ -2,7 +2,7 @@
 %define name		%{base_name}-skins
 %define summary		Skins for %{base_name}
 %define version		1.3
-%define release		%mkrel 17
+%define release		%mkrel 18
 %define skin_dir	%{_datadir}/%{base_name}/skins
 
 Name:		%{name}
