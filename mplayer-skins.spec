@@ -83,12 +83,12 @@ chmod -R go=u-w *
 %build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install -d -m 755 ${RPM_BUILD_ROOT}%{skin_dir}
-cp -r * ${RPM_BUILD_ROOT}%{skin_dir}
+rm -rf %{buildroot}
+install -d -m 755 %{buildroot}%{skin_dir}
+cp -r * %{buildroot}%{skin_dir}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
