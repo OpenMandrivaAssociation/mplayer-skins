@@ -1,7 +1,7 @@
 %define base_name	mplayer
 %define name		%{base_name}-skins
 %define summary		Skins for %{base_name}
-%define version		1.3
+%define version		1.4
 %define release		%mkrel 18
 %define skin_dir	%{_datadir}/%{base_name}/skins
 
@@ -9,25 +9,25 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Summary:	%{summary}
-Source0:	BlueHeart-1.5.tar.bz2
-Source2:	Cyrus-1.2.tar.bz2
-Source3:	standard-1.9.tar.bz2
-Source4:	neutron-1.5.tar.bz2
-Source5:	MidnightLove-1.6.tar.bz2
-Source6:	plastic-1.2.tar.bz2
-Source7:	Orange-1.3.tar.bz2
-Source8:	Blue-small-1.4.tar.bz2
-Source9:	xine-lcd-1.2.tar.bz2
-Source10:	phony-1.1.tar.bz2
-Source11:	mentalic-1.2.tar.bz2
-Source12:	proton-1.2.tar.bz2
-Source13:	slim-1.2.tar.bz2
-Source14:	krystal-1.1.tar.bz2
-Source15:	CubicPlayer-1.1.tar.bz2
-Source16:	AlienMind-1.2.tar.bz2
-Source17:	CornerMP-1.2.tar.bz2
-Source18:	CornerMP-aqua-1.4.tar.bz2
-URL:		http://www.mplayerhq.hu
+Source0:	http://mplayerhq.hu/MPlayer/skins/BlueHeart-1.5.tar.bz2
+Source2:	http://mplayerhq.hu/MPlayer/skins/Cyrus-1.2.tar.bz2
+Source3:	http://mplayerhq.hu/MPlayer/skins/standard-1.9.tar.bz2
+Source4:	http://mplayerhq.hu/MPlayer/skins/neutron-1.5.tar.bz2
+Source5:	http://mplayerhq.hu/MPlayer/skins/MidnightLove-1.6.tar.bz2
+Source6:	http://mplayerhq.hu/MPlayer/skins/plastic-1.2.tar.bz2
+Source7:	http://mplayerhq.hu/MPlayer/skins/Orange-1.3.tar.bz2
+Source8:	http://mplayerhq.hu/MPlayer/skins/Blue-small-1.5.tar.bz2
+Source9:	http://mplayerhq.hu/MPlayer/skins/xine-lcd-1.2.tar.bz2
+Source10:	http://mplayerhq.hu/MPlayer/skins/phony-1.1.tar.bz2
+Source11:	http://mplayerhq.hu/MPlayer/skins/mentalic-1.2.tar.bz2
+Source12:	http://mplayerhq.hu/MPlayer/skins/proton-1.2.tar.bz2
+Source13:	http://mplayerhq.hu/MPlayer/skins/slim-1.2.tar.bz2
+Source14:	http://mplayerhq.hu/MPlayer/skins/krystal-1.1.tar.bz2
+Source15:	http://mplayerhq.hu/MPlayer/skins/CubicPlayer-1.1.tar.bz2
+Source16:	http://mplayerhq.hu/MPlayer/skins/AlienMind-1.2.tar.bz2
+Source17:	http://mplayerhq.hu/MPlayer/skins/CornerMP-1.2.tar.bz2
+Source18:	http://mplayerhq.hu/MPlayer/skins/CornerMP-aqua-1.4.tar.bz2
+URL:		http://mplayerhq.hu/
 License:	Freely redistributable without restriction
 Group:		Video
 BuildArch:	noarch
