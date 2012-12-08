@@ -1,33 +1,33 @@
 %define base_name	mplayer
 %define name		%{base_name}-skins
 %define summary		Skins for %{base_name}
-%define version		1.4
-%define release		%mkrel 18
+%define version		1.3
+%define release		%mkrel 20
 %define skin_dir	%{_datadir}/%{base_name}/skins
 
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Summary:	%{summary}
-Source0:	http://mplayerhq.hu/MPlayer/skins/BlueHeart-1.5.tar.bz2
-Source2:	http://mplayerhq.hu/MPlayer/skins/Cyrus-1.2.tar.bz2
-Source3:	http://mplayerhq.hu/MPlayer/skins/standard-1.9.tar.bz2
-Source4:	http://mplayerhq.hu/MPlayer/skins/neutron-1.5.tar.bz2
-Source5:	http://mplayerhq.hu/MPlayer/skins/MidnightLove-1.6.tar.bz2
-Source6:	http://mplayerhq.hu/MPlayer/skins/plastic-1.2.tar.bz2
-Source7:	http://mplayerhq.hu/MPlayer/skins/Orange-1.3.tar.bz2
-Source8:	http://mplayerhq.hu/MPlayer/skins/Blue-small-1.5.tar.bz2
-Source9:	http://mplayerhq.hu/MPlayer/skins/xine-lcd-1.2.tar.bz2
-Source10:	http://mplayerhq.hu/MPlayer/skins/phony-1.1.tar.bz2
-Source11:	http://mplayerhq.hu/MPlayer/skins/mentalic-1.2.tar.bz2
-Source12:	http://mplayerhq.hu/MPlayer/skins/proton-1.2.tar.bz2
-Source13:	http://mplayerhq.hu/MPlayer/skins/slim-1.2.tar.bz2
-Source14:	http://mplayerhq.hu/MPlayer/skins/krystal-1.1.tar.bz2
-Source15:	http://mplayerhq.hu/MPlayer/skins/CubicPlayer-1.1.tar.bz2
-Source16:	http://mplayerhq.hu/MPlayer/skins/AlienMind-1.2.tar.bz2
-Source17:	http://mplayerhq.hu/MPlayer/skins/CornerMP-1.2.tar.bz2
-Source18:	http://mplayerhq.hu/MPlayer/skins/CornerMP-aqua-1.4.tar.bz2
-URL:		http://mplayerhq.hu/
+Source0:	BlueHeart-1.5.tar.bz2
+Source2:	Cyrus-1.2.tar.bz2
+Source3:	standard-1.9.tar.bz2
+Source4:	neutron-1.5.tar.bz2
+Source5:	MidnightLove-1.6.tar.bz2
+Source6:	plastic-1.2.tar.bz2
+Source7:	Orange-1.3.tar.bz2
+Source8:	Blue-small-1.4.tar.bz2
+Source9:	xine-lcd-1.2.tar.bz2
+Source10:	phony-1.1.tar.bz2
+Source11:	mentalic-1.2.tar.bz2
+Source12:	proton-1.2.tar.bz2
+Source13:	slim-1.2.tar.bz2
+Source14:	krystal-1.1.tar.bz2
+Source15:	CubicPlayer-1.1.tar.bz2
+Source16:	AlienMind-1.2.tar.bz2
+Source17:	CornerMP-1.2.tar.bz2
+Source18:	CornerMP-aqua-1.4.tar.bz2
+URL:		http://www.mplayerhq.hu
 License:	Freely redistributable without restriction
 Group:		Video
 BuildArch:	noarch
@@ -83,14 +83,66 @@ chmod -R go=u-w *
 %build
 
 %install
-rm -rf %{buildroot}
-install -d -m 755 %{buildroot}%{skin_dir}
-cp -r * %{buildroot}%{skin_dir}
+rm -rf $RPM_BUILD_ROOT
+install -d -m 755 ${RPM_BUILD_ROOT}%{skin_dir}
+cp -r * ${RPM_BUILD_ROOT}%{skin_dir}
 
 %clean
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
 %{skin_dir}/*
+
+
+
+%changelog
+* Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 1.3-18mdv2011.0
++ Revision: 666493
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 1.3-17mdv2011.0
++ Revision: 606664
+- rebuild
+
+* Wed Mar 17 2010 Oden Eriksson <oeriksson@mandriva.com> 1.3-16mdv2010.1
++ Revision: 523386
+- rebuilt for 2010.1
+
+* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 1.3-15mdv2010.0
++ Revision: 426195
+- rebuild
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 1.3-14mdv2009.0
++ Revision: 223322
+- rebuild
+
+* Tue Jan 15 2008 Thierry Vignaud <tv@mandriva.org> 1.3-13mdv2008.1
++ Revision: 153263
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Thu Aug 30 2007 Adam Williamson <awilliamson@mandriva.org> 1.3-12mdv2008.0
++ Revision: 75097
+- rebuild for 2008
+- correct license (following Fedora policy)
+- update Blue-small to 1.4
+
+
+* Fri Sep 01 2006 Götz Waschk <waschk@mandriva.org> 1.3-11mdv2007.0
+- move skins to the new dir
+
+* Sun Feb 05 2006 GÃ¶tz Waschk <waschk@mandriva.org> 1.3-10mdk
+- Rebuild
+- use mkrel
+
+* Fri Feb 04 2005 Götz Waschk <waschk@linux-mandrake.com> 1.3-9mdk
+- update all skins to their current versions
+
+* Fri Jan 23 2004 Götz Waschk <waschk@linux-mandrake.com> 1.3-8mdk
+- rename default as old-default
+- remove Blue skin (moved to mplayer-gui)
 
