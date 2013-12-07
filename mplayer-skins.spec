@@ -4,7 +4,7 @@
 Summary:	Skins for %{base_name}
 Name:		%{base_name}-skins
 Version:	1.4
-Release:	19
+Release:	20
 License:	Freely redistributable without restriction
 Group:		Video
 Url:		http://mplayerhq.hu/
