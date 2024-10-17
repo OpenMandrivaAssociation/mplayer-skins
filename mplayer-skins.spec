@@ -7,7 +7,7 @@ Version:	1.4
 Release:	29
 License:	Freely redistributable without restriction
 Group:		Video
-Url:		http://mplayerhq.hu/
+Url:		https://mplayerhq.hu/
 Source0:	http://mplayerhq.hu/MPlayer/skins/BlueHeart-1.5.tar.bz2
 Source2:	http://mplayerhq.hu/MPlayer/skins/Cyrus-1.2.tar.bz2
 Source3:	http://mplayerhq.hu/MPlayer/skins/standard-1.9.tar.bz2
